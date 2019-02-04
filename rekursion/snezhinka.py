@@ -34,4 +34,4 @@ def snezhinka(length: int, depth: int):
         turtle.right(120)
 
 
-snezhinka(2, 5)
+snezhinka(50, 200)
