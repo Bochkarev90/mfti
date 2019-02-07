@@ -1,13 +1,9 @@
 def check_sorted(a: list, ascending=True):
-    if ascending is True:
-        for i in range(0, len(a)-1):
-            if a[i] > a[i+1]:
-                return False
-        return True
+    s = ascending * 2 - 1
     for i in range(0, len(a)-1):
-        if a[i] < a[i+1]:
+        if s * a[i] > s * a[i+1]:
             return False
-        return True
+    return True
 
 
 def reverse_list(a: list):
