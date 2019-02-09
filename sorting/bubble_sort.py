@@ -18,12 +18,10 @@ def check_sorted(a: list, ascending=True):
 
 
 def bubble_sort(a: list):
-    bypass = 0
-    for i in range(len(a)):
-        for j in range(0, len(a)-1-bypass):
+    for bypass in range(1, len(a)):
+        for j in range(0, len(a)-bypass):
             if a[j] > a[j+1]:
                 a[j], a[j+1] = a[j+1], a[j]
-        bypass += 1
 
 
 created_list = create_list()
